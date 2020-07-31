@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>
         Run Buddy
     </title>
@@ -35,8 +35,35 @@
     </header>
 
     <!-- Jumbotron -->
-    <section>
-
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult.</p>
+            <!-- Form to schedule a consultation with trainers -->
+            <form>
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" />
+                <label for="email">Enter email address:</label>
+                <input type="email" placeholder="Email Address" name="email" id="email" />
+                <label for="phone">Enter your phone number here</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+                <p>
+                    Have you worked out with a trainer before?
+                    <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                    <label for="trainer-yes">Yes</label>
+                    <input type="radio" name="trainer-confirm" id="trainer-no" />
+                    <label for="trainer-no">No</label>
+                </p>
+                <p>
+                    I acknowledge that I am atleast 18 years of age.
+                    <input type="checkbox" name="age-confirm" id="age-18" />
+                </p>
+                <button type="submit">
+                    Get running!
+                </button>
+            </form>
+            <!-- End of consultation form -->
+        </div>
     </section>
 
     <!-- What We Do section -->
